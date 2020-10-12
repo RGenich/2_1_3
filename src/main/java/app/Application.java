@@ -2,8 +2,10 @@ package app;
 
 import app.config.AppConfig;
 import app.model.AnimalsCage;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.stereotype.Component;
 
 public class Application {
 
@@ -15,6 +17,8 @@ public class Application {
                     applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();
         }
+
+
     }
 
 }
